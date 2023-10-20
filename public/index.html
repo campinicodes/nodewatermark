@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Aplicar Marca d'Água</title>
+</head>
+<body>
+    <h1>Aplicar Marca d'Água em Imagem</h1>
+    <form id="upload-form" enctype="multipart/form-data">
+        <input type="file" id="file-input" accept="image/*" required>
+        <div>Escolher marca d'água:</div>
+        <select name="watermark" id="watermark-select" autocomplete="off">
+            <option value="watermark.png">Classified</option>
+            <option value="watermark2.png">Urgent</option>
+            <option value="watermark3.png">Approved</option>
+        </select>
+
+        <div id="watermark-preview">
+            <img src="" alt="">
+        </div>
+
+        <button type="submit">Enviar</button>
+    </form>
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
